@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@tailwind utilities;
 
 @custom-variant dark (&:is(.dark *));
 
@@ -49,7 +50,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: #ff2d2d;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -117,4 +118,28 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.text_decoration_hover {
+  text-decoration: none;
+  position: relative;
+}
+
+.text_decoration_hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  height: 0.125rem;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  border-radius: 6px;
+  background-color: #ff2d2d;
+  transition: transform 300ms;
+}
+
+.text_decoration_hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
