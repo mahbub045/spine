@@ -7,7 +7,15 @@ const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Services", href: "#services" },
+    {
+      name: "Services",
+      href: "#services",
+      submenu: [
+        { name: "Diagnostics", href: "#" },
+        { name: "Therapy", href: "#therapy" },
+        { name: "Consultation", href: "#consultation" },
+      ],
+    },
     { name: "Approach", href: "#about" },
     { name: "Impact", href: "#impact" },
     { name: "Insights", href: "#insights" },
@@ -31,15 +39,47 @@ const NavBar: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="nav-link hover:text-primary text_decoration_hover "
-              >
-                {item.name}
-              </a>
-            ))}
+            {navItems.map((item) =>
+              item.submenu ? (
+                <div key={item.name} className="relative group inline-block">
+                  <a
+                    href={item.href}
+                    className="nav-link hover:text-primary text_decoration_hover inline-flex items-center"
+                  >
+                    {item.name}
+                  </a>
+
+                  {/* Dropdown */}
+                  <div className="absolute left-0 top-full mt-0 z-50 w-48 bg-card text-card-foreground rounded-md shadow-lg opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-opacity duration-150 ease-out">
+                    <ul className="py-2">
+                      {item.submenu.map((sub) => (
+                        <li key={sub.name}>
+                          <Link
+                            href={sub.href}
+                            className="block px-4 py-2 text-sm hover:bg-muted/40"
+                          >
+                            <span
+                              className="text_decoration_hover opacity-50"
+                              style={{ cursor: "not-allowed" }}
+                            >
+                              {sub.name}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="nav-link hover:text-primary text_decoration_hover"
+                >
+                  {item.name}
+                </Link>
+              )
+            )}
           </nav>
 
           {/* Mobile Menu Button */}
