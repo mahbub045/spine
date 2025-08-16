@@ -1,4 +1,5 @@
 import About from "./About/About";
+import Contact from "./Contact/Contact";
 import Hero from "./Hero/Hero";
 import Impact from "./Impact/Impact";
 import Services from "./Services/Services";
@@ -11,6 +12,7 @@ const LandingPage: React.FC = () => {
         <Services />
         <About />
         <Impact />
+        <Contact />
       </main>
     </>
   );
