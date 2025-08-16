@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
 
             <Button
               variant="outline"
-              className="p-6 border-2 border-primary bg-transparent text-white hover:cursor-pointer transition-all duration-500"
+              className="p-6 border-2 border-primary bg-transparent text-white hover:bg-white/30 hover:cursor-pointer transition-all duration-500"
             >
               Crisis Support Available
             </Button>
