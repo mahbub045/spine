@@ -1,5 +1,6 @@
 import About from "./About/About";
 import Hero from "./Hero/Hero";
+import Impact from "./Impact/Impact";
 import Services from "./Services/Services";
 
 const LandingPage: React.FC = () => {
@@ -9,6 +10,7 @@ const LandingPage: React.FC = () => {
         <Hero />
         <Services />
         <About />
+        <Impact />
       </main>
     </>
   );
