@@ -9,12 +9,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Spine",
+  title: "SPINE - Strategic Political Communications",
   description: "Spine web application.",
   keywords: ["spine", "web app", "nextjs", "react"],
   viewport: "width=device-width, initial-scale=1",
   openGraph: {
-    title: "Spine",
+    title: "SPINE - Strategic Political Communications",
     description: "Spine web application.",
     url: "https://spine.com",
     siteName: "Spine",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spine",
+    title: "SPINE - Strategic Political Communications",
     description: "Spine web application.",
     images: ["/globe.svg"],
   },
@@ -44,6 +44,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>SPINE - Strategic Political Communications</title>
+      </head>
       <body className={poppins.className} suppressHydrationWarning={true}>
         {children}
       </body>
