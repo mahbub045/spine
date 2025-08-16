@@ -11,9 +11,9 @@ const NavBar: React.FC = () => {
       name: "Services",
       href: "#services",
       submenu: [
-        { name: "Diagnostics", href: "#" },
-        { name: "Therapy", href: "#therapy" },
-        { name: "Consultation", href: "#consultation" },
+        { name: "Political Research & Analysis", href: "#" },
+        { name: "Campaign Strategy", href: "#" },
+        { name: "Public Relations", href: "#" },
       ],
     },
     { name: "Approach", href: "#about" },
@@ -50,7 +50,7 @@ const NavBar: React.FC = () => {
                   </a>
 
                   {/* Dropdown */}
-                  <div className="absolute left-0 top-full mt-0 z-50 w-40 sm:w-48 bg-card text-card-foreground rounded-md shadow-lg opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-opacity duration-150 ease-out">
+                  <div className="absolute left-0 top-full mt-0 z-50 !w-60 sm:w-48 bg-card text-card-foreground rounded-md shadow-lg opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:visible group-hover:pointer-events-auto transition-opacity duration-150 ease-out">
                     <ul className="py-2">
                       {item.submenu.map((sub) => (
                         <li key={sub.name}>
