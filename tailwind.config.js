@@ -11,9 +11,11 @@ module.exports = {
       colors: {
         primary: "#ff2d2d",
       },
+      fontFamily: {
+        poppins: ["var(--font-poppins)", "sans-serif"],
+        gilker: ["var(--font-gilker)", "sans-serif"],
+      },
     },
   },
   plugins: [],
 };
-
-

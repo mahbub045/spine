@@ -2,6 +2,14 @@
 @import "tw-animate-css";
 @tailwind utilities;
 
+.font-gilker {
+  font-family: var(--font-gilker), sans-serif;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins), sans-serif;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

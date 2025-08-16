@@ -28,7 +28,7 @@ const NavBar: React.FC = () => {
           {/* Logo */}
           <div>
             <Link href="/" className="flex flex-col items-start">
-              <span className="text-3xl font-bold text-primary tracking-tight leading-none">
+              <span className="font-gilker text-3xl font-bold text-primary tracking-tight leading-none">
                 SPINE
               </span>
               <span className="text-[8px] uppercase tracking-widest text-foreground/60">
