@@ -64,7 +64,7 @@ const About: React.FC = () => {
             </div>
 
             <div className="bg-primary/20 border-l-4 border-primary p-6 rounded-r-lg">
-              <p className="text-black/90 font-medium">
+              <p className="text-black/80 font-medium">
                 "SPINE doesn't just manage communications – we architect
                 political narratives that shape public opinion and drive
                 legislative success."
