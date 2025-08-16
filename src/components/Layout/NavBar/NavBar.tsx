@@ -58,12 +58,12 @@ const NavBar: React.FC = () => {
                             href={sub.href}
                             className="block px-3 sm:px-4 py-1 sm:py-2 text-sm hover:bg-muted/40"
                           >
-                            <span
-                              className="text_decoration_hover opacity-50"
-                              style={{ cursor: "not-allowed" }}
+                            <button
+                              disabled
+                              className="text_decoration_hover opacity-50 cursor-not-allowed"
                             >
                               {sub.name}
-                            </span>
+                            </button>
                           </Link>
                         </li>
                       ))}
