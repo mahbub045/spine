@@ -1,4 +1,4 @@
-import { Award, Globe, TrendingUp } from "lucide-react";
+import { Award, Globe } from "lucide-react";
 
 const Impact: React.FC = () => {
   const achievements = [
@@ -8,7 +8,7 @@ const Impact: React.FC = () => {
       description: "Successfully managed reputation threats",
     },
     {
-      metric: "500+",
+      metric: "15+",
       label: "Political Leaders",
       description: "Served across federal and state levels",
     },
@@ -61,26 +61,12 @@ const Impact: React.FC = () => {
         </div>
 
         {/* Case Studies Section */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-16 mb-20">
           <div>
             <h3 className="text-3xl font-bold text-black/80 mb-6">
               Anonymous Case Studies
             </h3>
             <div className="space-y-6">
-              <div className="bg-card border border-border rounded-lg p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <TrendingUp className="w-6 h-6 text-primary" />
-                  <span className="font-semibold text-black/90">
-                    Federal Campaign Recovery
-                  </span>
-                </div>
-                <p className="text-muted-foreground">
-                  Transformed a declining gubernatorial campaign with strategic
-                  narrative repositioning, resulting in a 15-point polling surge
-                  and eventual victory.
-                </p>
-              </div>
-
               <div className="bg-card border border-border rounded-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Award className="w-6 h-6 text-primary" />
