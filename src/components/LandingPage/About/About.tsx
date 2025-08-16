@@ -33,7 +33,7 @@ const About: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
-            <h2 className="text-5xl font-bold mb-4 text-black/80">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black/80">
               Every Word Matters in Politics
             </h2>
             <p className="text-muted-foreground mb-8">
