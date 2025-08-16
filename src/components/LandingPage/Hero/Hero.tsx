@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto">
+      <div className="relative container mx-auto py-20">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-200 mb-8 leading-tight">
             Shaping Political <span className="text-primary">Narratives</span>{" "}
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
 
             <Button
               variant="outline"
-              className="p-6 border-2 border-primary bg-transparent text-white hover:bg-white/30 hover:cursor-pointer transition-all duration-500"
+              className="p-6 border-2 border-primary bg-transparent text-white hover:bg-white/50 hover:cursor-pointer transition-all duration-500"
             >
               Crisis Support Available
             </Button>
