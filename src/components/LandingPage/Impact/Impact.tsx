@@ -24,27 +24,6 @@ const Impact: React.FC = () => {
     },
   ];
 
-  const testimonials = [
-    {
-      quote:
-        "SPINE's strategic communications completely transformed our narrative. Their crisis management saved our campaign.",
-      author: "Senior Congressional Aide",
-      role: "Federal Campaign",
-    },
-    {
-      quote:
-        "The level of discretion and professionalism is unmatched. They understand the political landscape like no other.",
-      author: "State Assembly Member",
-      role: "Legislative Leadership",
-    },
-    {
-      quote:
-        "Their media strategy helped us build relationships that continue to benefit our legislative agenda years later.",
-      author: "Policy Director",
-      role: "Government Relations",
-    },
-  ];
-
   return (
     <section
       id="impact"
@@ -137,33 +116,6 @@ const Impact: React.FC = () => {
               alt="Strategic Political Meeting"
               className="w-full h-[500px] object-cover rounded-2xl"
             />
-          </div>
-        </div>
-
-        {/* Testimonials */}
-        <div className="bg-primary/10 rounded-2xl p-8 md:p-12">
-          <h3 className="text-3xl font-bold text-black/90 text-center mb-12">
-            What Political Leaders Say
-          </h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-background rounded-xl p-6 shadow-[var(--shadow-soft)]"
-              >
-                <p className="text-muted-foreground italic mb-4">
-                  "{testimonial.quote}"
-                </p>
-                <div className="border-t border-border pt-4">
-                  <div className="font-semibold text-black/90">
-                    {testimonial.author}
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    {testimonial.role}
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
