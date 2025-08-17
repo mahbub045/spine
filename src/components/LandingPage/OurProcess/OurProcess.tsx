@@ -37,8 +37,8 @@ const OurProcess = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-8">Our Process</h1>
-          <p className="text-xl leading-relaxed max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-8">Our Process</h1>
+          <p className="text-base md:text-xl leading-relaxed max-w-3xl mx-auto">
             Our methodology ensures that every campaign is strategically
             planned, effectively executed, and continually optimized for
             success.
@@ -50,16 +50,20 @@ const OurProcess = () => {
           {processSteps.map((step, index) => (
             <div key={step.id} className="flex items-start gap-8">
               <div className="flex flex-col items-center">
-                <div className="text-8xl font-bold text-white/30 leading-none">
+                <div className="text-5xl md:text-8xl font-bold text-white/30 leading-none">
                   {step.id.toString().padStart(2, "0")}
                 </div>
                 {index < processSteps.length - 1 && (
                   <div className="w-1 h-24 bg-white/30 mt-4"></div>
                 )}
               </div>
-              <div className="flex-1 pt-4">
-                <h2 className="text-3xl font-bold mb-4">{step.title}</h2>
-                <p className="text-lg leading-relaxed">{step.description}</p>
+              <div className="flex-1 pt-2 md:pt-4">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                  {step.title}
+                </h2>
+                <p className="text-base md:text-lg leading-relaxed">
+                  {step.description}
+                </p>
               </div>
             </div>
           ))}
