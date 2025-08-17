@@ -1,5 +1,6 @@
 "use client";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -27,13 +28,21 @@ const NavBar: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div>
-            <Link href="/" className="flex flex-col items-start">
-              <span className="font-gilker text-2xl sm:text-3xl font-bold text-primary uppercase tracking-tight leading-none">
+            <Link href="/" className="flex flex-col items-center">
+              <span className="font-gilker text-3xl md:text-5xl font-bold text-primary uppercase tracking-tight leading-none">
                 SPINE
               </span>
-              <span className="text-[6px] sm:text-[8px] uppercase tracking-widest text-foreground/60">
-                FOR BETTER BANGLADESH
+              <span className="text-[4px] md:text-[7px] tracking-widest text-foreground/60">
+                Strategic Politics & Intelligent Navigation Expert
               </span>
+              {/* Image  */}
+              {/* <Image
+                src="/images/logo.png"
+                alt="SPINE Logo"
+                width={180}
+                height={20}
+                className="object-contain"
+              /> */}
             </Link>
           </div>
 

@@ -86,13 +86,13 @@ const About: React.FC = () => {
             <div className="absolute -bottom-8 -left-8 bg-card shadow-2xl rounded-xl p-6 border border-border">
               <div className="grid grid-cols-2 gap-6 text-center">
                 <div>
-                  <div className="text-2xl font-bold text-primary">15+</div>
+                  <div className="text-2xl font-bold text-primary">5+</div>
                   <div className="text-sm text-muted-foreground">
                     Years Experience
                   </div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-primary">200+</div>
+                  <div className="text-2xl font-bold text-primary">17+</div>
                   <div className="text-sm text-muted-foreground">Campaigns</div>
                 </div>
               </div>
