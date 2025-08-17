@@ -1,9 +1,24 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Hero: React.FC = () => {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+  const words = ["Messages", "Discourses", "Agendas", "Storylines", "Framing"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false);
+      setTimeout(() => {
+        setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+        setIsVisible(true);
+      }, 1000); // Half the transition duration for fade out/in effect
+    }, 3000); // Change word every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [words.length]);
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -20,7 +35,19 @@ const Hero: React.FC = () => {
       <div className="relative container mx-auto px-4 xl:px-0 py-24">
         <div className="max-w-2xl md:max-w-4xl">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-200 mb-6 md:mb-8 leading-tight">
-            Shaping Political <span className="text-primary">Narratives</span>{" "}
+            Shaping Political{" "}
+            <span className="relative inline-block text-primary min-w-max">
+              <span className="invisible">{words[1]}</span>
+              <span
+                className={`absolute top-0 left-0 text-primary transition-all duration-700 ease-in-out transform ${
+                  isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
+                }`}
+              >
+                {words[currentWordIndex]}
+              </span>
+            </span>{" "}
             That Matter
           </h1>
 
