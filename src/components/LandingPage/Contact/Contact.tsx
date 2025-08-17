@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { Clock, Mail, MapPin, Phone, Shield } from "lucide-react";
+import { Shield } from "lucide-react";
 import { useState } from "react";
 
 const Contact: React.FC = () => {
@@ -46,92 +46,11 @@ const Contact: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
-          {/* Contact Information */}
-          <div>
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold text-black/80 mb-6">
-                Get in Touch
-              </h3>
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-black/90">
-                      Direct Line
-                    </div>
-                    <div className="text-muted-foreground">(202) 555-SPINE</div>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-black/90">
-                      Secure Email
-                    </div>
-                    <div className="text-muted-foreground">
-                      contact@spine-comms.com
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-black/90">
-                      Washington Office
-                    </div>
-                    <div className="text-muted-foreground">
-                      1200 K Street NW, Suite 500
-                      <br />
-                      Washington, DC 20005
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Clock className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-black/90">
-                      24/7 Crisis Support
-                    </div>
-                    <div className="text-muted-foreground">
-                      Emergency response available
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Security Notice */}
-            <div className="bg-primary/20 border border-primary/20 rounded-xl p-6">
-              <div className="flex items-center gap-3 mb-3">
-                <Shield className="w-6 h-6 text-primary" />
-                <span className="font-semibold text-black/90">
-                  Confidentiality Guaranteed
-                </span>
-              </div>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                All communications are protected by attorney-client privilege
-                where applicable and strict confidentiality agreements. We
-                understand the sensitive nature of political communications.
-              </p>
-            </div>
-          </div>
-
+        <div className="grid gap-16">
           {/* Contact Form */}
           <div className="bg-card border border-border rounded-2xl p-8 shadow-[var(--shadow-elegant)]">
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid gap-6">
                 <div>
                   <label
                     htmlFor="name"
@@ -204,7 +123,7 @@ const Contact: React.FC = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
-                    placeholder="(202) 555-0000"
+                    placeholder="(+880) 15000-00000"
                   />
                 </div>
               </div>
@@ -248,17 +167,36 @@ const Contact: React.FC = () => {
                 />
               </div>
 
-              <Button
-                type="submit"
-                className="w-full p-6 justify-center hover:cursor-pointer"
-              >
-                Request Confidential Consultation
-              </Button>
+              <div className="grid lg:grid-cols-2 gap-6 items-center">
+                {/* Security Notice */}
+                <div className="bg-primary/20 border border-primary/20 rounded-xl p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Shield className="w-6 h-6 text-primary" />
+                    <span className="font-semibold text-black/90">
+                      Confidentiality Guaranteed
+                    </span>
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    All communications are protected by attorney-client
+                    privilege where applicable and strict confidentiality
+                    agreements. We understand the sensitive nature of political
+                    communications.
+                  </p>
+                </div>
+                <div>
+                  <Button
+                    type="submit"
+                    className="w-full p-6 justify-center hover:cursor-pointer"
+                  >
+                    Request Confidential Consultation
+                  </Button>
 
-              <p className="text-xs text-muted-foreground text-center">
-                By submitting this form, you agree to our confidentiality
-                protocols and terms of service.
-              </p>
+                  <p className="text-xs text-muted-foreground mt-2 text-center">
+                    By submitting this form, you agree to our confidentiality
+                    protocols and terms of service.
+                  </p>
+                </div>
+              </div>
             </form>
           </div>
         </div>
