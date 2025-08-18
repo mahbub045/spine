@@ -64,7 +64,7 @@ const Services: React.FC = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="card p-6 sm:p-8 border border-gray-300 rounded-md shadow hover:shadow-lg hover:border-primary/30 transition-all"
+              className="card p-6 sm:p-8 border border-gray-300 rounded-md shadow-xl hover:shadow-2xl hover:border-primary/30 transition-all"
             >
               <h3 className="text-xl sm:text-2xl font-display font-bold mb-3 sm:mb-4">
                 {service.title}
@@ -93,9 +93,11 @@ const Services: React.FC = () => {
           <p className="text-muted-foreground text-sm sm:text-base mb-4 sm:mb-6">
             Ready to elevate your political communications strategy?
           </p>
-          <Button className="px-4 py-3 sm:px-6 sm:py-4 hover:cursor-pointer">
-            Schedule Consultation
-          </Button>
+          <a href="#contact">
+            <Button className="px-4 py-3 sm:px-6 sm:py-4 hover:cursor-pointer">
+              Schedule Consultation
+            </Button>
+          </a>
         </div>
       </div>
     </section>

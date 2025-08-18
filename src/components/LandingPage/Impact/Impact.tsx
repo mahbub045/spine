@@ -45,7 +45,7 @@ const Impact: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {achievements.map((achievement, index) => (
             <div key={index} className="text-center group">
-              <div className="bg-card border border-border rounded-xl p-8 hover:shadow-[var(--shadow-elegant)] transition-[var(--transition-elegant)] hover:-translate-y-1">
+              <div className="bg-card border border-border rounded-xl p-8 shadow-xl hover:shadow-2xl transition-[var(--transition-elegant)] hover:-translate-y-1">
                 <div className="text-4xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">
                   {achievement.metric}
                 </div>
@@ -67,7 +67,7 @@ const Impact: React.FC = () => {
               Anonymous Case Studies
             </h3>
             <div className="space-y-6">
-              <div className="bg-card border border-border rounded-lg p-6">
+              <div className="bg-card border border-border rounded-lg shadow-2xl p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Award className="w-6 h-6 text-primary" />
                   <span className="font-semibold text-black/90">
@@ -81,7 +81,7 @@ const Impact: React.FC = () => {
                 </p>
               </div>
 
-              <div className="bg-card border border-border rounded-lg p-6">
+              <div className="bg-card border border-border rounded-lg shadow-2xl p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Globe className="w-6 h-6 text-primary" />
                   <span className="font-semibold text-black/90">

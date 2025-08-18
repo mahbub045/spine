@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
 
         <div className="grid gap-16">
           {/* Contact Form */}
-          <div className="bg-card border border-border rounded-2xl p-8 shadow-[var(--shadow-elegant)]">
+          <div className="bg-card border border-border rounded-2xl p-8 shadow-2xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid gap-6">
                 <div>
@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                    className="w-full px-4 py-3 border border-primary/60 rounded-lg focus:outline-none focus:ring-0 focus:shadow-lg focus:shadow-primary/40"
                     placeholder="Your name"
                   />
                 </div>
@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                    className="w-full px-4 py-3 border border-primary/60 rounded-lg focus:outline-none focus:ring-0 focus:shadow-lg focus:shadow-primary/40"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -104,7 +104,7 @@ const Contact: React.FC = () => {
                     name="organization"
                     value={formData.organization}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2  focus:ring-primary/20 focus:border-primary transition-colors"
+                    className="w-full px-4 py-3 border border-primary/60 rounded-lg focus:outline-none focus:ring-0 focus:shadow-lg focus:shadow-primary/40"
                     placeholder="Campaign, Office, or Organization"
                   />
                 </div>
@@ -122,7 +122,7 @@ const Contact: React.FC = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                    className="w-full px-4 py-3 border border-primary/60 rounded-lg focus:outline-none focus:ring-0 focus:shadow-lg focus:shadow-primary/40"
                     placeholder="(+880) 15000-00000"
                   />
                 </div>
@@ -140,7 +140,7 @@ const Contact: React.FC = () => {
                   name="urgency"
                   value={formData.urgency}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                  className="w-full px-4 py-3 border border-primary/60 rounded-lg focus:outline-none focus:ring-0 focus:shadow-lg focus:shadow-primary/40"
                 >
                   <option value="standard">Standard Consultation</option>
                   <option value="urgent">Urgent Matter</option>
@@ -162,14 +162,14 @@ const Contact: React.FC = () => {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-primary/60 rounded-lg focus:outline-none focus:ring-0 focus:shadow-lg focus:shadow-primary/40 resize-none"
                   placeholder="Please describe your communications needs or current situation..."
                 />
               </div>
 
               <div className="grid lg:grid-cols-2 gap-6 items-center">
                 {/* Security Notice */}
-                <div className="bg-primary/20 border border-primary/20 rounded-xl p-6">
+                <div className="bg-primary/20 border border-primary/20 rounded-xl p-6 shadow-2xl">
                   <div className="flex items-center gap-3 mb-3">
                     <Shield className="w-6 h-6 text-primary" />
                     <span className="font-semibold text-black/90">

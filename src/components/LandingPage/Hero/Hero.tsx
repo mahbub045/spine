@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
           alt="Government Building"
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-primary/35 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/35 to-transparent"></div>
       </div>
 
       {/* Content */}
@@ -57,17 +57,20 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-            <Button className="bg-primary px-6 py-4 sm:py-6 hover:cursor-pointer transition-transform duration-500 ease-in-out hover:scale-105">
-              Transform Your Message
-              <ArrowRight />
-            </Button>
-
-            <Button
-              variant="outline"
-              className="px-6 py-4 sm:py-6 border-2 border-primary bg-transparent text-white hover:bg-white/50 hover:cursor-pointer transition-all duration-500"
-            >
-              Crisis Support Available
-            </Button>
+            <a href="#contact">
+              <Button className="bg-primary px-6 py-4 sm:py-6 hover:cursor-pointer transition-transform duration-500 ease-in-out hover:scale-105">
+                Transform Your Message
+                <ArrowRight />
+              </Button>
+            </a>
+            <a href="#contact">
+              <Button
+                variant="outline"
+                className="px-6 py-4 sm:py-6 border-2 border-primary bg-transparent text-white hover:bg-white/50 hover:cursor-pointer transition-all duration-500"
+              >
+                Crisis Support Available
+              </Button>
+            </a>
           </div>
 
           {/* Trust Indicators */}
