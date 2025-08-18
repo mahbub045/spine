@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-4 xl:px-0 py-24">
+      <div className="relative container mx-auto px-4 py-24">
         <div className="max-w-2xl md:max-w-4xl">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-200 mb-6 md:mb-8 leading-tight">
             Shaping Political{" "}
