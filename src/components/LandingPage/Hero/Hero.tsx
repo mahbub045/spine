@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
           alt="Government Building"
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-primary/35 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/35 to-transparent"></div>
       </div>
 
       {/* Content */}
@@ -72,10 +72,10 @@ const Hero: React.FC = () => {
 
           {/* Trust Indicators */}
           <div className="mt-12 md:mt-16 pt-6 md:pt-8 border-t border-primary-foreground/20">
-            <p className="text-gray-300 text-xs sm:text-sm uppercase tracking-wider mb-4">
+            <p className="text-gray-200 text-xs sm:text-sm uppercase tracking-wider mb-4">
               Trusted by Political Leaders Across the Nation
             </p>
-            <div className="flex flex-wrap gap-4 sm:gap-8 text-gray-400">
+            <div className="flex flex-wrap gap-4 sm:gap-8 text-gray-300">
               <span className="text-xs sm:text-sm">Confidential</span>
               <span className="hidden sm:inline">•</span>
               <span className="text-xs sm:text-sm">Strategic</span>
