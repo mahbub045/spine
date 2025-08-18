@@ -14,7 +14,7 @@ const LandingPage: React.FC = () => {
         <OurProcess />
         <About />
         <Impact />
-        {/* <Contact /> */}
+        <Contact />
       </main>
     </>
   );
