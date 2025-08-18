@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
 
         <div className="grid gap-16">
           {/* Contact Form */}
-          <div className="bg-card border border-border rounded-2xl p-8 shadow-2xl">
+          <div className="bg-card border border-border rounded-2xl p-8 shadow-xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid gap-6">
                 <div>
