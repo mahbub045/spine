@@ -93,9 +93,11 @@ const Services: React.FC = () => {
           <p className="text-muted-foreground text-sm sm:text-base mb-4 sm:mb-6">
             Ready to elevate your political communications strategy?
           </p>
-          <Button className="px-4 py-3 sm:px-6 sm:py-4 hover:cursor-pointer">
-            Schedule Consultation
-          </Button>
+          <a href="#contact">
+            <Button className="px-4 py-3 sm:px-6 sm:py-4 hover:cursor-pointer">
+              Schedule Consultation
+            </Button>
+          </a>
         </div>
       </div>
     </section>

@@ -57,25 +57,28 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-            <Button className="bg-primary px-6 py-4 sm:py-6 hover:cursor-pointer transition-transform duration-500 ease-in-out hover:scale-105">
-              Transform Your Message
-              <ArrowRight />
-            </Button>
-
-            <Button
-              variant="outline"
-              className="px-6 py-4 sm:py-6 border-2 border-primary bg-transparent text-white hover:bg-white/50 hover:cursor-pointer transition-all duration-500"
-            >
-              Crisis Support Available
-            </Button>
+            <a href="#contact">
+              <Button className="bg-primary px-6 py-4 sm:py-6 hover:cursor-pointer transition-transform duration-500 ease-in-out hover:scale-105">
+                Transform Your Message
+                <ArrowRight />
+              </Button>
+            </a>
+            <a href="#contact">
+              <Button
+                variant="outline"
+                className="px-6 py-4 sm:py-6 border-2 border-primary bg-transparent text-white hover:bg-white/50 hover:cursor-pointer transition-all duration-500"
+              >
+                Crisis Support Available
+              </Button>
+            </a>
           </div>
 
           {/* Trust Indicators */}
           <div className="mt-12 md:mt-16 pt-6 md:pt-8 border-t border-primary-foreground/20">
-            <p className="text-gray-200 text-xs sm:text-sm uppercase tracking-wider mb-4">
+            <p className="text-gray-300 text-xs sm:text-sm uppercase tracking-wider mb-4">
               Trusted by Political Leaders Across the Nation
             </p>
-            <div className="flex flex-wrap gap-4 sm:gap-8 text-gray-300">
+            <div className="flex flex-wrap gap-4 sm:gap-8 text-gray-400">
               <span className="text-xs sm:text-sm">Confidential</span>
               <span className="hidden sm:inline">•</span>
               <span className="text-xs sm:text-sm">Strategic</span>
