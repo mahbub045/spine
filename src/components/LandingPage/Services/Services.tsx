@@ -64,7 +64,7 @@ const Services: React.FC = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="card p-6 sm:p-8 border border-gray-300 rounded-md shadow hover:shadow-lg hover:border-primary/30 transition-all"
+              className="card p-6 sm:p-8 border border-gray-300 rounded-md shadow-xl hover:shadow-2xl hover:border-primary/30 transition-all"
             >
               <h3 className="text-xl sm:text-2xl font-display font-bold mb-3 sm:mb-4">
                 {service.title}

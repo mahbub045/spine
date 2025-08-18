@@ -63,7 +63,7 @@ const About: React.FC = () => {
               })}
             </div>
 
-            <div className="bg-primary/20 border-l-4 border-primary p-6 rounded-r-lg">
+            <div className="bg-primary/20 border-l-4 border-primary p-6 rounded-r-lg shadow-2xl">
               <p className="text-black/80 font-medium">
                 "SPINE doesn't just manage communications – we architect
                 political narratives that shape public opinion and drive
